@@ -6,7 +6,7 @@ $fluid-grid-grid-rows: 5;
 $fluid-grid-padding: 2%;
 $fluid-grid-class-name: views-row;
  
-@mixin grid-mobile($class-name: $fg-class-name) {
+@mixin grid-mobile($class-name: $fluid-grid-class-name) {
   .#{$class-name} {
     float: left;
     clear: both;
@@ -15,7 +15,7 @@ $fluid-grid-class-name: views-row;
     }
 }
  
-@mixin grid-desktop($class-name: $fg-class-name) {
+@mixin grid-desktop($class-name: $fluid-grid-class-name) {
   .#{$class-name} {
     float: left;
     clear: none;
